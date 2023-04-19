@@ -23,7 +23,7 @@ function Register() {
     } else {
       try {
         // Creating user account in DB
-        await authContext.register(email, password);
+        await authContext.register(email, password, name, surname);
         setEmail(email); // Registration successful
       } catch (error) {
         // Error here oof

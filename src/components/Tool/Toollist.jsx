@@ -22,7 +22,7 @@ const ToolList = (props) => {
             axios.get('/api/tools')
             .then(res => {
                 setTools(res.data)
-            }). catch(err => {
+            }).catch(err => {
                 console.log(err)
             })
     
